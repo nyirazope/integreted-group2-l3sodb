@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <h2>Course Registration Form</h2>
+    <form action="submit_registration.php" method="POST">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="course">Select Course:</label><br>
+        <select id="course" name="course">
+            <option value="course1">Course 1</option>
+            <option value="course2">Course 2</option>
+            <option value="course3">Course 3</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+
+        <label for="comments">Comments (if any):</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
